@@ -22,12 +22,12 @@
             </tr>
         </thead>
         <tbody>
-             {{#each users}}
+             {{#each data}}
             <tr>
                 <td>{{this.id}}</td>
                 <td>{{this.name}}</td>
                 <td>{{this.email}}</td>
-                <td>{{formatDate this.created_at}}</td>
+                <td>{{formatDate this.createdAt}}</td>
                 <td><a href="/update-user?id={{this.id}}">edit</td>
                 <td><a href="/delete-user?id={{this.id}}">delete</td>
             </tr> {{/each}}
